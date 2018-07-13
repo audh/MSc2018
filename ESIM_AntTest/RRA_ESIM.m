@@ -219,13 +219,13 @@ ki_bio_bott(1)=2.0;                 % Initial sea ice thermal conductivity betwe
 ki_5_bio(1)=2.0;                    % Initial sea ice thermal conductivity between Vbr=0.05 and the bio layer
 ki_ice_bott(1)=2.0;                 % Initial sea ice thermal conductivity at the bottom
 
-Sw(1)=33.4;                         % Seawater salinity
+Sw(1)=33.6;                         % Seawater salinity
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   START RUNNING  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 for i=2:nmax                % maximum number of timestep
-    Sw(i)=33.4;                     % Seawater salinity
+    Sw(i)=33.6;                     % Seawater salinity
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %   SNOW DENSITY
     
@@ -720,7 +720,7 @@ for i=2:nmax                % maximum number of timestep
             end
         end
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        if abs(T0_star(j)-T0_star(j-1))< 0.01, break                    %   CONVERENCE CRITERION: 0.01 K
+        if abs(T0_star(j)-T0_star(j-1))< 0.01, break                    %   CONVERGENCE CRITERION: 0.01 K
         end
     end
 
