@@ -1,17 +1,17 @@
-%   EAXMPLE OF INPUT DATA INTERPOLATION FROM 6H TO 1.5 H
-%   by Letizia Tedesco (letizia.tedesco@ymparisto.fi)
-%   January 2007, Revised November 2012
-%   !!! BE AWARE: TO BE RUN BEFORE MODEL RUN !!!   
-
-%   !!! BE AWARE: PATH TO FORCING TO BE SET BY THE USER !!! %%%%%%%%%%%%%%%%%%%%%%%%%%%
-load /home/riesna/MSc2018/ESIM_AntTest/NCEP/2/Cl.txt           %(total cloud cover in percentage)
-load /home/riesna/MSc2018/ESIM_AntTest/NCEP/2/Fsd_cloud.txt    %(downwars shortwave)
-load /home/riesna/MSc2018/ESIM_AntTest/NCEP/2/P_rate.txt       %(precipitation rate)
-load /home/riesna/MSc2018/ESIM_AntTest/NCEP/2/qa.txt           %(specific humidity at 2 m height)
-load /home/riesna/MSc2018/ESIM_AntTest/NCEP/2/qs.txt           %(specific humidity at the surface)
-load /home/riesna/MSc2018/ESIM_AntTest/NCEP/2/Ta.txt           %(air temperature)
-load /home/riesna/MSc2018/ESIM_AntTest/NCEP/2/U.txt            %(U wind speed at 10 m height)
-load /home/riesna/MSc2018/ESIM_AntTest/NCEP/2/V.txt            %(V wind speed at 10 m height)
+%   INTERPOLATING ANTARCTIC DATA FROM 6H TO 1.5 H
+%   BY RIESNA R AUDH (ADHRIE001@MYUCT.AC.ZA) [BASED ON WORK BY L TEDESCO]
+%   JULY 2018
+%   !!! RUN THIS SCRIPT FIRST !!!
+clear all
+%   !!! PATH TO BE SET BY USER !!! %%%%%%%%%%%%%%%%%%%%%%%%%%%
+load /home/riesna/MSc2018/ESIM_AntTest/NCEP/3/Cl.txt           %(total cloud cover in percentage)
+load /home/riesna/MSc2018/ESIM_AntTest/NCEP/3/Fsd_cloud.txt    %(downwars shortwave)
+load /home/riesna/MSc2018/ESIM_AntTest/NCEP/3/P_rate.txt       %(precipitation rate)
+load /home/riesna/MSc2018/ESIM_AntTest/NCEP/3/qa.txt           %(specific humidity at 2 m height)
+load /home/riesna/MSc2018/ESIM_AntTest/NCEP/3/qs.txt           %(specific humidity at the surface)
+load /home/riesna/MSc2018/ESIM_AntTest/NCEP/3/Ta.txt           %(air temperature)
+load /home/riesna/MSc2018/ESIM_AntTest/NCEP/3/U.txt            %(U wind speed at 10 m height)
+load /home/riesna/MSc2018/ESIM_AntTest/NCEP/3/V.txt            %(V wind speed at 10 m height)
 
 x=1:4:5840; %%% to be set up by user
 xi=1:1:5840; %%% to be set up by user
