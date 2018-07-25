@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   OUTPUT FOR BFM INPUT based on Kobbefjord test case simulation                   
+%   OUTPUT FOR BFM INPUT based on ANTARCTIC test case simulation                   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%!!! BE AWARE: TO RUN AFTER ESIM MODEL RUNS!!!%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  for i=1:nmax
     if hi_bio(i)>ZERO
@@ -161,7 +161,7 @@ Sbr_av=Sbr_av';
 Sbk_av=Sbk_av';
 
 
-day=736696:1:737060; % 01-01-17 : 31:12:17 (365d)		This is specific for Kobbefjord test case study site. To be adjusted by the user as needed.
+day=736696:1:737060; % 01-01-17 : 31:12:17 (365d)		This is specific for ANTARCTIC test case study site. To be adjusted by the user as needed.
 day=day';
 day=datestr(day,31);
 
