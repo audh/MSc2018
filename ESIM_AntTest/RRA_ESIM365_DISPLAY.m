@@ -84,25 +84,27 @@ SI=SI';
 
 figure
 
-plot(HS,'m','LineWidth',1.6)
+plot(HS,'Color',[.31 .25 .74],'LineWidth',1)
 hold on
 
-plot(-HMI,'g','LineWidth',1.6) 
+plot(-HMI,'c','LineWidth',1) 
 hold on
-plot(-EHB,'k','Linewidth',1.6)    %-abs(hi_bio) is plotting only the BAL values below the surface
+plot(-EHB,'k','Linewidth',1)    %-abs(hi_bio) is plotting only the BAL values below the surface
 hold on 
 
-plot(SI,'b','LineWidth',1.6)
+plot(SI,'b','LineWidth',1)
 hold on
 
-title('Thickness and cover 1|5400|8.5|365')
-legend('snow cover','meteoric ice','BAL','sea ice','FontSize',10,'FontWeight','bold')
+title('ESIM Output','FontSize',20,'FontWeight','bold')
+
+%title('Thickness and cover 1|5400|8.5|365')
+legend('snow cover','meteoric ice','BAL','sea ice','FontSize',12,'FontWeight','bold')
 
 xlim([120 365])
 set(gca,'XTick',120:30.4167:365)
 % set(gca,'XTickLabel',{'jan-17','feb-17','mar-17','apr-17','may-17','jun-17','jul-17','aug-17','sep-17','oct-17','nov-17','dec-17'},'FontSize',10,'FontWeight','bold')
-set(gca,'XTickLabel',{'apr-17','may-17','jun-17','jul-17','aug-17','sep-17','oct-17','nov-17','dec-17'},'FontSize',10,'FontWeight','bold')
+set(gca,'XTickLabel',{'apr-17','may-17','jun-17','jul-17','aug-17','sep-17','oct-17','nov-17','dec-17'},'FontSize',15,'FontWeight','bold')
 % set(gca,'YTick',-0.6:0.2:0.4)
-ylim([-1.0 0.3])
-ylabel('thickness (m)','FontSize',10,'FontWeight','bold')
-% set(gca,'YTickLabel',{'-0.6','-0.4','-0.2','0.0','0.2'},'FontSize',10,'FontWeight','bold')
+ylim([-0.8 0.35])
+ylabel('Thickness (m)','FontSize',15,'FontWeight','bold')
+set(gca,'YTickLabel',{'-0.8','-0.6','-0.4','-0.2','0.0','0.2','0.4'},'FontSize',15,'FontWeight','bold')

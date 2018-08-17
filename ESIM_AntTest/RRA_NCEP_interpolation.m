@@ -4,14 +4,14 @@
 %   !!! RUN THIS SCRIPT FIRST !!!
 clear all
 %   !!! PATH TO BE SET BY USER !!! %%%%%%%%%%%%%%%%%%%%%%%%%%%
-load /home/riesna/MSc2018/ESIM_AntTest/NCEP/3/Cl.txt           %(total cloud cover in percentage)
-load /home/riesna/MSc2018/ESIM_AntTest/NCEP/3/Fsd_cloud.txt    %(downwars shortwave)
-load /home/riesna/MSc2018/ESIM_AntTest/NCEP/3/P_rate.txt       %(precipitation rate)
-load /home/riesna/MSc2018/ESIM_AntTest/NCEP/3/qa.txt           %(specific humidity at 2 m height)
-load /home/riesna/MSc2018/ESIM_AntTest/NCEP/3/qs.txt           %(specific humidity at the surface)
-load /home/riesna/MSc2018/ESIM_AntTest/NCEP/3/Ta.txt           %(air temperature)
-load /home/riesna/MSc2018/ESIM_AntTest/NCEP/3/U.txt            %(U wind speed at 10 m height)
-load /home/riesna/MSc2018/ESIM_AntTest/NCEP/3/V.txt            %(V wind speed at 10 m height)
+load /home/riesna/MSc2018/ESIM_AntTest/NCEP/1/Cl.txt           %(total cloud cover in percentage)
+load /home/riesna/MSc2018/ESIM_AntTest/NCEP/1/Fsd_cloud.txt    %(downwars shortwave)
+load /home/riesna/MSc2018/ESIM_AntTest/NCEP/1/P_rate.txt       %(precipitation rate)
+load /home/riesna/MSc2018/ESIM_AntTest/NCEP/1/qa.txt           %(specific humidity at 2 m height)
+load /home/riesna/MSc2018/ESIM_AntTest/NCEP/1/qs.txt           %(specific humidity at the surface)
+load /home/riesna/MSc2018/ESIM_AntTest/NCEP/1/Ta.txt           %(air temperature)
+load /home/riesna/MSc2018/ESIM_AntTest/NCEP/1/U.txt            %(U wind speed at 10 m height)
+load /home/riesna/MSc2018/ESIM_AntTest/NCEP/1/V.txt            %(V wind speed at 10 m height)
 
 x=1:4:5840; %%% to be set up by user
 xi=1:1:5840; %%% to be set up by user
