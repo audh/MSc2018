@@ -1,0 +1,12 @@
+in home directory:
+
+nano .ecmwfapirc 
+
+paste key into file
+
+ctrl+x
+y to save
+
+run python script by:
+
+python ERA5.py 
