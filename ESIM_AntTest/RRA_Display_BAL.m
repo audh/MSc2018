@@ -15,7 +15,7 @@ hold on
 plot(-hmi-hi,'b','LineWidth',1.5)
 hold on
 
-title('Thickness and cover 1|NCEP|8.75 W/m^2','FontSize',20,'FontWeight','bold')
+title('Thickness and cover 1|ERA|8.0 W/m^2','FontSize',20,'FontWeight','bold')
 legend('snow cover','meteoric ice','BAL','sea ice','FontSize',10,'FontWeight','bold')
 
 xlim([1944 5837])

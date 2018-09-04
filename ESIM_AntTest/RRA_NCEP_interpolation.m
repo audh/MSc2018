@@ -1,8 +1,8 @@
-%   INTERPOLATING ANTARCTIC DATA FROM 6H TO 1.5 H
+%%   INTERPOLATING ANTARCTIC DATA FROM 6H TO 1.5 H
 %   BY RIESNA R AUDH (ADHRIE001@MYUCT.AC.ZA) [BASED ON WORK BY L TEDESCO]
 %   JULY 2018
 %   !!! RUN THIS SCRIPT FIRST !!!
-%clear all
+clear all
 %   !!! PATH TO BE SET BY USER !!! %%%%%%%%%%%%%%%%%%%%%%%%%%%
 load /home/riesna/MSc2018/ESIM_AntTest/NCEP/1/Cl.txt           %(total cloud cover in percentage)
 load /home/riesna/MSc2018/ESIM_AntTest/NCEP/1/Fsd_cloud.txt    %(downwars shortwave)
