@@ -15,11 +15,11 @@ hold on
 plot(-hmi-hi,'b','LineWidth',1.5)
 hold on
 
-title('Thickness and cover 1|ERA|8.0 W/m^2','FontSize',20,'FontWeight','bold')
-legend('snow cover','meteoric ice','BAL','sea ice','FontSize',10,'FontWeight','bold')
+title('Thickness and cover 1|ERA 5|8.75 W/m^2','FontSize',20,'FontWeight','bold')
+legend('snow cover','meteoric ice','BAL','sea ice','FontSize',10,'FontWeight','bold',3)
 
-xlim([1944 5837])
-set(gca,'XTick',1944:486.4167:5837)
+xlim([1944 5800])
+set(gca,'XTick',1944:486.4167:5350)
 % set(gca,'XTickLabel',{'jan-17','feb-17','mar-17','apr-17','may-17','jun-17','jul-17','aug-17','sep-17','oct-17','nov-17','dec-17'},'FontSize',10,'FontWeight','bold')
 set(gca,'XTickLabel',{'may-17','jun-17','jul-17','aug-17','sep-17','oct-17','nov-17','dec-17'},'FontSize',20,'FontWeight','bold')
 % set(gca,'YTick',-0.6:0.2:0.4)

@@ -2,7 +2,14 @@ in home directory:
 
 nano .ecmwfapirc 
 
-paste key into file
+paste key into file:
+
+{
+    "url"   : "https://api.ecmwf.int/v1",
+    "key"   : "aeca6ef310609f5dabff4291907bd90f",
+    "email" : "adhrie001@myuct.ac.za"
+}
+      
 
 ctrl+x
 y to save
