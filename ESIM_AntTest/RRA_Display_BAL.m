@@ -1,31 +1,31 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% DISPLAY ESIM RESULTS %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% ANTARCTIC RUN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-figure
-
-% subplot(2,3,1)
-
-plot(hs+hs_prec_bucket,'m','LineWidth',1.5)
-hold on
-
-plot(-hmi,'g','LineWidth',1.5) 
-hold on
-plot(-abs(hi_bio),'k','Linewidth',1)    %-abs(hi_bio) is plotting only the BAL values below the surface
-hold on 
-
-plot(-hmi-hi,'b','LineWidth',1.5)
-hold on
-
-title('Thickness and cover 1|ERA 5|8.75 W/m^2','FontSize',20,'FontWeight','bold')
-legend('snow cover','meteoric ice','BAL','sea ice','FontSize',10,'FontWeight','bold',3)
-
-xlim([1944 5800])
-set(gca,'XTick',1944:486.4167:5350)
-% set(gca,'XTickLabel',{'jan-17','feb-17','mar-17','apr-17','may-17','jun-17','jul-17','aug-17','sep-17','oct-17','nov-17','dec-17'},'FontSize',10,'FontWeight','bold')
-set(gca,'XTickLabel',{'may-17','jun-17','jul-17','aug-17','sep-17','oct-17','nov-17','dec-17'},'FontSize',20,'FontWeight','bold')
-% set(gca,'YTick',-0.6:0.2:0.4)
-ylim([-1.0 0.3])
-ylabel('thickness (m)','FontSize',20,'FontWeight','bold')
-% set(gca,'YTickLabel',{'-0.6','-0.4','-0.2','0.0','0.2'},'FontSize',10,'FontWeight','bold')
+% figure
+% 
+% % subplot(2,3,1)
+% 
+% plot(hs+hs_prec_bucket,'m','LineWidth',1.5)
+% hold on
+% 
+% plot(-hmi,'g','LineWidth',1.5) 
+% hold on
+% plot(-abs(hi_bio),'k','Linewidth',1)    %-abs(hi_bio) is plotting only the BAL values below the surface
+% hold on 
+% 
+% plot(-hmi-hi,'b','LineWidth',1.5)
+% hold on
+% 
+% title('Thickness and cover 1|ERA 5|8.75 W/m^2','FontSize',20,'FontWeight','bold')
+% legend('snow cover','meteoric ice','BAL','sea ice','FontSize',10,'FontWeight','bold',3)
+% 
+% xlim([1944 5800])
+% set(gca,'XTick',1944:486.4167:5350)
+% % set(gca,'XTickLabel',{'jan-17','feb-17','mar-17','apr-17','may-17','jun-17','jul-17','aug-17','sep-17','oct-17','nov-17','dec-17'},'FontSize',10,'FontWeight','bold')
+% set(gca,'XTickLabel',{'may-17','jun-17','jul-17','aug-17','sep-17','oct-17','nov-17','dec-17'},'FontSize',20,'FontWeight','bold')
+% % set(gca,'YTick',-0.6:0.2:0.4)
+% ylim([-1.0 0.3])
+% ylabel('thickness (m)','FontSize',20,'FontWeight','bold')
+% % set(gca,'YTickLabel',{'-0.6','-0.4','-0.2','0.0','0.2'},'FontSize',10,'FontWeight','bold')
 % %%%%%%%%%%%%%%%%%%%%%%%%%%% IRRADIANCE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  subplot(2,3,2)
 %  title('Irradiance')
@@ -78,7 +78,7 @@ ylabel('thickness (m)','FontSize',20,'FontWeight','bold')
 % 
 % subplot(2,3,4)
 % title('Bulk Salinity')
-% 
+
 % plot(Si,'b','LineWidth',1.2)
 % hold on
 % plot(Sice_bio,'k','LineWidth',1.2) 
@@ -92,7 +92,7 @@ ylabel('thickness (m)','FontSize',20,'FontWeight','bold')
 % ylabel('Bulk Salinity (per mill)','FontSize',10,'FontWeight','bold')
 % 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BRINE SALINITY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% subplot(2,3,5)
+% % subplot(2,3,5)
 % title('Brine Salinity')
 % 
 % plot(Sbr_i,'b','LineWidth',1.2) 
@@ -129,19 +129,27 @@ ylabel('thickness (m)','FontSize',20,'FontWeight','bold')
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BAL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % subplot(2,3,6)
-% figure
-% title('BAL vs Time')
-% 
-% plot(hi_bio2,'b','LineWidth',1.2)
+figure
+title('BAL vs Time')
+
+% plot(hi_bio,'Color',[0.8500, 0.3250, 0.0980],'LineWidth',1.2)
 % hold on
-% 
+
+% plot(hi_bio,'Color',[0.4940, 0.1840, 0.5560],'LineWidth',1.2)
+% hold on
+
+plot(hi_bio,'Color',[0, 0.75, 0.75],'LineWidth',1.2)
+hold on
+
+title('ERA 5 BAL Thickness|8.5 W/m^2','FontSize',25,'FontWeight','bold')
 % legend('BAL thickness', 'FontSize',10,'FontWeight','bold')
-% 
-% xlim([0 5837])
-%set(gca,'XTick',1:486.4167:5837)
-%set(gca,'XTickLabel',{'jan-17','feb-17','mar-17','apr-17','may-17','jun-17','jul-17','aug-17','sep-17','oct-17','nov-17','dec-17'},'FontSize',10,'FontWeight','bold')
-% 
+
+xlim([1944 5800])
+set(gca,'XTick',1944:486.4167:5350)
+% set(gca,'XTickLabel',{'jan-17','feb-17','mar-17','apr-17','may-17','jun-17','jul-17','aug-17','sep-17','oct-17','nov-17','dec-17'},'FontSize',10,'FontWeight','bold')
+set(gca,'XTickLabel',{'may-17','jun-17','jul-17','aug-17','sep-17','oct-17','nov-17','dec-17'},'FontSize',23,'FontWeight','bold')
+
 % set(gca,'YTick',-0.6:0.2:0.4)
-% ylim([0 0.7])
-% ylabel('thickness[m]','FontSize',10,'FontWeight','bold')
-% set(gca,'YTickLabel',{'0.0','0.05','0.10','0.15','0.20'},'FontSize',10,'FontWeight','bold')
+ylim([0 0.7])
+ylabel('thickness[m]','FontSize',25,'FontWeight','bold')
+set(gca,'YTickLabel',{'0.0','0.05','0.10','0.15','0.20'},'FontSize',23,'FontWeight','bold')
