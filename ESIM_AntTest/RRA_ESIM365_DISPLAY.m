@@ -95,7 +95,7 @@ hold on
 plot(SI,'b','LineWidth',1)
 hold on
 
-title('ESIM Output','FontSize',20,'FontWeight','bold')
+title('Thickness and cover 1|ERA 5| 12.5 W/m^2','FontSize',20,'FontWeight','bold')
 
 %title('Thickness and cover 1|5400|8.5|365')
 legend('snow cover','meteoric ice','BAL','sea ice','FontSize',12,'FontWeight','bold',3)
@@ -105,6 +105,6 @@ set(gca,'XTick',150:30.4167:365)
 % set(gca,'XTickLabel',{'jan-17','feb-17','mar-17','apr-17','may-17','jun-17','jul-17','aug-17','sep-17','oct-17','nov-17','dec-17'},'FontSize',10,'FontWeight','bold')
 set(gca,'XTickLabel',{'may-17','jun-17','jul-17','aug-17','sep-17','oct-17','nov-17','dec-17'},'FontSize',20,'FontWeight','bold')
 % set(gca,'YTick',-0.6:0.2:0.4)
-ylim([-0.8 0.35])
+ylim([-0.9 0.35])
 ylabel('Thickness (m)','FontSize',22,'FontWeight','bold')
 set(gca,'YTickLabel',{'-0.8','-0.6','-0.4','-0.2','0.0','0.2','0.4'},'FontSize',20,'FontWeight','bold')
