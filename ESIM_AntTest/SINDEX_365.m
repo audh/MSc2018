@@ -72,18 +72,18 @@
 % dlmwrite(TP,PPT);
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-load Ta_ERA5365.txt
-load Ta_NCEP365.txt
+clear all
+load ppt_S.txt
+% load Ta_NCEP365.txt
 % load EI_BAL.txt
 % load NCEP.txt
 % 
 
-plot(Ta_ERA5365,'Color',[0.8500, 0.3250, 0.0980],'LineWidth',1.5) %ncep
+plot(ppt_S,'Color',[0.8500, 0.3250, 0.0980],'LineWidth',1.5) %ncep
 hold on
 
-plot(Ta_NCEP365,'Color',[0.30, 0.70, 0.10],'LineWidth',1.5) %ncep
-hold on
+% plot(Ta_NCEP365,'Color',[0.30, 0.70, 0.10],'LineWidth',1.5) %ncep
+% hold on
 
 % plot(NCEP,'Color',[0.8500, 0.3250, 0.0980],'LineWidth',1.5) %ncep
 % hold on
