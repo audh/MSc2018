@@ -44,7 +44,7 @@
 % SI=reshape(SI,15,365);
 % SI=mean(SI);
 % SI=SI';
-% SIT=['SI_ERA5365.txt'];
+% SIT=['SI125_ERA5365.txt'];
 % dlmwrite(SIT,SI);
 % 
 % Ta=Ta;
@@ -73,13 +73,13 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear all
-load ppt_S.txt
+load ASMR_SIC.txt
 % load Ta_NCEP365.txt
 % load EI_BAL.txt
 % load NCEP.txt
 % 
 
-plot(ppt_S,'Color',[0.8500, 0.3250, 0.0980],'LineWidth',1.5) %ncep
+plot(ASMR_SIC,'Color',[0.8500, 0.3250, 0.0980],'LineWidth',1.5) %ncep
 hold on
 
 % plot(Ta_NCEP365,'Color',[0.30, 0.70, 0.10],'LineWidth',1.5) %ncep
@@ -94,7 +94,7 @@ hold on
 % plot(E5_BAL,'Color',[0, 0.75, 0.75],'LineWidth',1.5) %E5
 hold on
 
-title('S-Index | Air Temperature','FontSize',25,'FontWeight','bold')
+% title('S-Index | Air Temperature','FontSize',25,'FontWeight','bold')
 
 % title('BAL Thickness comparison|8.5 W/m^2','FontSize',25,'FontWeight','bold')
 % legend('NCEP','ERA INTERIM','ERA 5', 'FontSize',20,'FontWeight','bold',2)
@@ -105,6 +105,6 @@ set(gca,'XTick',0:30:365)
 % set(gca,'XTickLabel',{'may-17','jun-17','jul-17','aug-17','sep-17','oct-17','nov-17','dec-17'},'FontSize',23,'FontWeight','bold')
 
 % set(gca,'YTick',-0.6:0.2:0.4)
-ylim([0 0.7])
+ylim([0 100])
 ylabel('thickness[m]','FontSize',25,'FontWeight','bold')
-set(gca,'YTickLabel',{'0.0','0.05','0.10','0.15','0.20'},'FontSize',23,'FontWeight','bold')
+set(gca,'YTickLabel',{'0','10','20','30','40','50','60','70','80','90','100'},'FontSize',23,'FontWeight','bold')

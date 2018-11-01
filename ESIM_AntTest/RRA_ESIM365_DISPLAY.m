@@ -56,6 +56,7 @@ EHB(5476:5837)=[];
 EHB=reshape(EHB,15,365);
 EHB=mean(EHB);
 EHB=EHB';
+dlmwrite('NCEP85_BAL',EHB)
 
 HS=hs+hs_prec_bucket;
 HS=HS';
