@@ -96,7 +96,7 @@ hold on
 plot(SI,'b','LineWidth',1)
 hold on
 
-title('Thickness and cover 1|ERA 5| 12.5 W/m^2','FontSize',20,'FontWeight','bold')
+title('Thickness and cover 1|ERA 5| 15.5 W/m^2','FontSize',20,'FontWeight','bold')
 
 %title('Thickness and cover 1|5400|8.5|365')
 legend('snow cover','meteoric ice','BAL','sea ice','FontSize',12,'FontWeight','bold',3)

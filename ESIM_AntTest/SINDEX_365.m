@@ -38,14 +38,14 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% ERA 5: RUN AFTER ERA5 INTERPOLATION AND ESIM3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% SI=hmi-hi;
-% SI=SI';
-% SI(5476:5837)=[];
-% SI=reshape(SI,15,365);
-% SI=mean(SI);
-% SI=SI';
-% SIT=['SI125_ERA5365.txt'];
-% dlmwrite(SIT,SI);
+SI=hmi-hi;
+SI=SI';
+SI(5476:5837)=[];
+SI=reshape(SI,15,365);
+SI=mean(SI);
+SI=SI';
+SIT=['SI185_ERA5365.txt'];
+dlmwrite(SIT,SI);
 % 
 % Ta=Ta;
 % Ta(5476:5837)=[];
