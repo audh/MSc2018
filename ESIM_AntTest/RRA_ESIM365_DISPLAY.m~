@@ -56,7 +56,7 @@ EHB(5476:5837)=[];
 EHB=reshape(EHB,15,365);
 EHB=mean(EHB);
 EHB=EHB';
-dlmwrite('NCEP_BAL_185',EHB)
+dlmwrite('ERA5_BAL_185',EHB)
 
 HS=hs+hs_prec_bucket;
 HS=HS';
@@ -64,7 +64,7 @@ HS(5476:5837)=[];
 HS=reshape(HS,15,365);
 HS=mean(HS);
 HS=HS';
-dlmwrite('NCEP_HS_185',EHB)
+dlmwrite('ERA5_HS_185',EHB)
 
 HMI=hmi;
 HMI=HMI';
@@ -72,7 +72,7 @@ HMI(5476:5837)=[];
 HMI=reshape(HMI,15,365);
 HMI=mean(HMI);
 HMI=HMI';
-dlmwrite('NCEP_HMI_185',EHB)
+dlmwrite('ERA5_HMI_185',EHB)
 
 SI=hmi-hi;
 SI=SI';
@@ -80,7 +80,7 @@ SI(5476:5837)=[];
 SI=reshape(SI,15,365);
 SI=mean(SI);
 SI=SI';
-dlmwrite('NCEP_SI_185',EHB)
+dlmwrite('ERA5_SI_185',EHB)
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
